@@ -1,0 +1,4216 @@
+{
+	"info": {
+		"_postman_id": "2d3869f4-60f4-4f77-8492-314addcfa85f",
+		"name": "Shadow API Exploration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Catalog API",
+			"item": [
+				{
+					"name": "Get Plans",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CATALOG_API_URL}}/api/plans/v1/list?market=de&visibility[]=customer_space&category[]=vm",
+							"host": [
+								"{{REACT_APP_CATALOG_API_URL}}"
+							],
+							"path": [
+								"api",
+								"plans",
+								"v1",
+								"list"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "de"
+								},
+								{
+									"key": "visibility[]",
+									"value": "customer_space"
+								},
+								{
+									"key": "category[]",
+									"value": "vm"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Customer API",
+			"item": [
+				{
+					"name": "Pre-Order Details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"value": "customer.api-web.shadow.tech",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/pre-order",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"pre-order"
+							]
+						},
+						"description": "Pre-order scheme for the 2020 plan change"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/{{token}}",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"{{token}}"
+							],
+							"query": [
+								{
+									"key": "screen[]",
+									"value": "subscription",
+									"description": "optional - presumed options: security, subscription, promo, support, share, apps, dashboard, recovery, cancellation, myshadow, order-tracking",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Invoices",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/invoices/?gte=2011-10-05T14%3A48%3A00.000Z&lte=2020-01-01T14%3A48%3A00.000Z",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"invoices",
+								""
+							],
+							"query": [
+								{
+									"key": "gte",
+									"value": "2011-10-05T14%3A48%3A00.000Z"
+								},
+								{
+									"key": "lte",
+									"value": "2020-01-01T14%3A48%3A00.000Z"
+								}
+							]
+						},
+						"description": "endpoint incomplete\na = \"/customer/invoices/\" + r + \"?gte=2011-10-05T14%3A48%3A00.000Z&lte=\" + encodeURIComponent(t), (for r return n = \"production\" === Qe.default.nodeEnv ? \"token\" : \"token_\" + Qe.default.nodeEnv,)"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Campaigns",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/campaigns",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"campaigns"
+							]
+						},
+						"description": "endpoint incomplete\na = \"/customer/invoices/\" + r + \"?gte=2011-10-05T14%3A48%3A00.000Z&lte=\" + encodeURIComponent(t), (for r return n = \"production\" === Qe.default.nodeEnv ? \"token\" : \"token_\" + Qe.default.nodeEnv,)"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Campaign Activate",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/campaign/",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"campaign",
+								""
+							]
+						},
+						"description": "post e"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Sponsor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/sponsor",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"sponsor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Trial Get",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/trial",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"trial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Trial Extend",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/trial/coupon",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trial",
+								"coupon"
+							]
+						},
+						"description": "{code: t}"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Trial Plan (Patch)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/trial/plan",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trial",
+								"plan"
+							]
+						},
+						"description": "{planId: t.id}"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Trial Unchurn",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/trial/unchurn",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trial",
+								"unchurn"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Trial Churn",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/trial/churn",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"trial",
+								"churn"
+							]
+						},
+						"description": "Guesswork"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Address",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/address",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Subscription Plan",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/subscription/plan/",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"subscription",
+								"plan",
+								""
+							]
+						},
+						"description": "/\" + t.id, n)"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Add Box",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/add/box",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"add",
+								"box"
+							]
+						},
+						"description": "/box\", t)"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Recission Rollback",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/rescission/rollback",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"rescission",
+								"rollback"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Recission",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/rescission",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"rescission"
+							]
+						},
+						"description": "Guesswork"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Source",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/source",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"source"
+							]
+						},
+						"description": "{stripeToken: t}"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update"
+							]
+						},
+						"description": "/update\", t); updateInfos"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "oldPassword",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/password",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"password"
+							]
+						},
+						"description": "Just a guess, but a lot of password validation seems to be done in JS (such as common password blacklisting) - Can we set our password to \"carebear\"?"
+					},
+					"response": []
+				},
+				{
+					"name": "Recovery Source",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/recovery/source/",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recovery",
+								"source",
+								""
+							]
+						},
+						"description": "{+ t}"
+					},
+					"response": []
+				},
+				{
+					"name": "Recovery Payment",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/recovery/payment/",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recovery",
+								"payment",
+								""
+							]
+						},
+						"description": "{source: n, invoice: r}"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Subscribe Hive Beta",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/subscribe/beta-hive",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"subscribe",
+								"beta-hive"
+							]
+						},
+						"description": "{source: n, invoice: r}"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Auth-Email (initEmail)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "newEmail",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/auth-email",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"auth-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Change Email",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "newEmail",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/update/email",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"update",
+								"email"
+							]
+						},
+						"description": "/email\", t); changeEmail:"
+					},
+					"response": []
+				},
+				{
+					"name": "Recovery Payment Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/recovery/regularization",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"recovery",
+								"regularization"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Subscription Plan - Storage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/subscription/plan/storage",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"plan",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Subscription Plan - Storage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/subscription/plan/storage?t",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"plan",
+								"storage"
+							],
+							"query": [
+								{
+									"key": "t",
+									"value": null,
+									"description": "unknown"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Subscription Plan - Storage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "",
+									"description": "untested",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/subscription/plan/storage",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"plan",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Subscription Plan - Storage",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/subscription/plan/storage",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"plan",
+								"storage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Campaigns",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/campaigns",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"campaigns"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Sponsor",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_CUSTOMER_API_URL}}/api/v1/customer/sponsor",
+							"host": [
+								"{{REACT_APP_CUSTOMER_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"customer",
+								"sponsor"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "9dfcd3a8-8e3c-424a-9671-a044217f7240",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "30cd8861-cde9-4b2e-8a13-a57eff973bb7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "SSO API",
+			"item": [
+				{
+					"name": "Login (Get Token)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", jsonData.result.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "identity",
+								"type": "text"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "{{plaintext_email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{plaintext_password}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_SSO_API_URL}}/api/v1/user/login",
+							"host": [
+								"{{REACT_APP_SSO_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout (Invalidate Token)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{REACT_APP_SSO_API_URL}}/api/v1/user/logout/{{token}}",
+							"host": [
+								"{{REACT_APP_SSO_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", jsonData.result.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "{{plaintext_email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{plaintext_password}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_SSO_API_URL}}/api/v1/user/get-auth/{{token}}",
+							"host": [
+								"{{REACT_APP_SSO_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"get-auth",
+								"{{token}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Stock API",
+			"item": [
+				{
+					"name": "Get SKU Stock",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e648c979-9214-4c56-b68b-0f84d38ab686",
+								"exec": [
+									"pm.environment.set(\"current_time_ms_utc\", new Date().getTime());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_STOCK_API_URL}}/api/stock/v1/sku/SHADOWGHOST?market=de&timestamp={{current_time_ms_utc}}",
+							"host": [
+								"{{REACT_APP_STOCK_API_URL}}"
+							],
+							"path": [
+								"api",
+								"stock",
+								"v1",
+								"sku",
+								"SHADOWGHOST"
+							],
+							"query": [
+								{
+									"key": "market",
+									"value": "de"
+								},
+								{
+									"key": "timestamp",
+									"value": "{{current_time_ms_utc}}"
+								}
+							]
+						},
+						"description": "Defaulted to SHADOWGHOST as this is the only known SKU at the moment\n\nproductSKUs: {\n    shadowGhost: [\"SHADOWGHOST\"]\n    },"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Tax API",
+			"item": [
+				{
+					"name": "FindGoodTaxInUS (Incorrect Info)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "e648c979-9214-4c56-b68b-0f84d38ab686",
+								"exec": [
+									"pm.environment.set(\"current_time_ms_utc\", new Date().getTime());"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_TAXJAR_API_URL}}/taxjar/tax/address?address=\"1600 Amphitheatre Parkway, Mountain View\"&state=\"CA\"&item_id=box-ghost-usd&item_type=Box",
+							"host": [
+								"{{REACT_APP_TAXJAR_API_URL}}"
+							],
+							"path": [
+								"taxjar",
+								"tax",
+								"address"
+							],
+							"query": [
+								{
+									"key": "address",
+									"value": "\"1600 Amphitheatre Parkway, Mountain View\"",
+									"description": "n + r + a"
+								},
+								{
+									"key": "state",
+									"value": "\"CA\"",
+									"description": "Defaults to CA?"
+								},
+								{
+									"key": "item_id",
+									"value": "box-ghost-usd"
+								},
+								{
+									"key": "item_type",
+									"value": "Box"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Shadow API",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Email API",
+			"item": [
+				{
+					"name": "Check Email Code",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									"var jsonData = JSON.parse(responseBody);",
+									"postman.setEnvironmentVariable(\"token\", jsonData.result.token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "{{plaintext_email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{plaintext_password}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_EMAIL_API_URL}}/v1/email/code/validity/",
+							"host": [
+								"{{REACT_APP_EMAIL_API_URL}}"
+							],
+							"path": [
+								"v1",
+								"email",
+								"code",
+								"validity",
+								""
+							]
+						},
+						"description": "c.emailApi.post(\"vemail/code/validity/\" + n + \"/\" + t); checkEmailCode: function()"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "GDPR API (User Data API)",
+			"item": [
+				{
+					"name": "Get User Personal Data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_USER_DATA_API_URL}}/gdpr/customer/data?uuid=&market=de",
+							"host": [
+								"{{REACT_APP_USER_DATA_API_URL}}"
+							],
+							"path": [
+								"gdpr",
+								"customer",
+								"data"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": ""
+								},
+								{
+									"key": "market",
+									"value": "de"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scan Cookies",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "domain",
+									"value": "",
+									"description": "d.default.cookiesDomain",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "path",
+									"value": "\"/\"",
+									"type": "text"
+								},
+								{
+									"key": "categories",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_USER_DATA_API_URL}}/gdpr/cookie/scan",
+							"host": [
+								"{{REACT_APP_USER_DATA_API_URL}}"
+							],
+							"path": [
+								"gdpr",
+								"cookie",
+								"scan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Scan Cookies Result",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "categories",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_USER_DATA_API_URL}}/gdpr/cookie/scan-result",
+							"host": [
+								"{{REACT_APP_USER_DATA_API_URL}}"
+							],
+							"path": [
+								"gdpr",
+								"cookie",
+								"scan-result"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set Cookie Preferences",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "categories",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_USER_DATA_API_URL}}/gdpr/cookie/preferences",
+							"host": [
+								"{{REACT_APP_USER_DATA_API_URL}}"
+							],
+							"path": [
+								"gdpr",
+								"cookie",
+								"preferences"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "{{plaintext_email}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{plaintext_password}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_USER_DATA_API_URL}}/gdpr/customer/data?uuid",
+							"host": [
+								"{{REACT_APP_USER_DATA_API_URL}}"
+							],
+							"path": [
+								"gdpr",
+								"customer",
+								"data"
+							],
+							"query": [
+								{
+									"key": "uuid",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Discount API",
+			"item": [
+				{
+					"name": "Referral List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_DISCOUNT_API_URL}}/api/campaigns/v1/referral/list",
+							"host": [
+								"{{REACT_APP_DISCOUNT_API_URL}}"
+							],
+							"path": [
+								"api",
+								"campaigns",
+								"v1",
+								"referral",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Discounts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{REACT_APP_DISCOUNT_API_URL}}/api/campaigns/v1/sales/list?markets[]=",
+							"host": [
+								"{{REACT_APP_DISCOUNT_API_URL}}"
+							],
+							"path": [
+								"api",
+								"campaigns",
+								"v1",
+								"sales",
+								"list"
+							],
+							"query": [
+								{
+									"key": "markets[]",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "VM API",
+			"item": [
+				{
+					"name": "\"Raz\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1bb66fef-ceeb-4ea4-afc9-592ab02a99c2",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "authorization",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"value": "no-cache"
+							},
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							},
+							{
+								"key": "Accept-Encoding",
+								"type": "text",
+								"value": "identity"
+							},
+							{
+								"key": "Accept-Language",
+								"type": "text",
+								"value": "en-US,en"
+							},
+							{
+								"key": "authority",
+								"type": "text",
+								"value": "customer.api-web.shadow.tech",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "reason",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "comment",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "preferences",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{REACT_APP_VM_API_URL}}/api/v1/raz",
+							"host": [
+								"{{REACT_APP_VM_API_URL}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"raz"
+							]
+						},
+						"description": "Unknown name / function"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get Environmental Variables (API URLs)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "93f2c60a-d8a5-447b-a244-152385cb0985",
+						"exec": [
+							"var global_env_json = JSON.parse(responseBody.substring(responseBody.lastIndexOf(\"{\"), responseBody.lastIndexOf(\"}\")+1));",
+							"",
+							"Object.keys(global_env_json).forEach(function(key) {",
+							"  postman.setEnvironmentVariable(key, global_env_json[key]);",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{env.js}}",
+					"host": [
+						"{{env.js}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "944ed499-8e39-425c-bdf6-a40682d95f83",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "65287c64-72c3-47d8-a8cc-8a084d5567f2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
