@@ -10,3 +10,4 @@ http://www.shadow.tech
 Shadow Blade SAS
 
 I do not work at Blade.
+For future reference at http://shadowinternals.com
